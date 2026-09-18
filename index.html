@@ -1,1 +1,50 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BAJA Terrain Intelligence</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>BAJA TERRAIN INTELLIGENCE</h1>
+    <span id="can-status" class="status-badge offline">CAN: Offline</span>
+  </header>
+
+  <main class="dashboard-container">
+    <section class="card map-card">
+      <h2>Circuit Map</h2>
+      <div class="map-wrapper">
+        <img id="track-image" src="image.png" alt="Circuit Map">
+        <canvas id="telemetry-canvas"></canvas>
+      </div>
+    </section>
+
+    <section class="card status-card">
+      <h2>Vehicle Status</h2>
+      <div class="metrics-grid">
+        <div class="metric">
+          <span class="label">Speed</span>
+          <span id="val-speed" class="value">0 km/h</span>
+        </div>
+        <div class="metric">
+          <span class="label">Distance</span>
+          <span id="val-distance" class="value">0 m</span>
+        </div>
+        <div class="metric">
+          <span class="label">Ultrasonic</span>
+          <span id="val-ultrasonic" class="value">0 cm</span>
+        </div>
+        <div class="metric">
+          <span class="label">Terrain Condition</span>
+          <span id="val-terrain" class="value">Normal</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
